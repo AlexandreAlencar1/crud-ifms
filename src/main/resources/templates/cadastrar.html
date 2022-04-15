@@ -17,16 +17,34 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-around"
-    >
-      <h1 class="navbar-brand">Gestão de Alunos</h1>
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" th:href="@{/student/}">Alunos</a>
-        </li>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+          <a class="navbar-brand" href="/">Gestão de Alunos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                  aria-controls="navbarResponsive"
+                  aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
     <main>
       <div class="container mt-4">
         <div class="row">
@@ -85,9 +103,9 @@
         </div>
       </div>
     </main>
-    <footer class="bg-dark text-center text-lg-start">
+    <footer class="bg-white text-center text-lg-start">
       <div class="text-center p-3">
-        <p>©Desenvolvido por Aluno</p>
+        <p>©Desenvolvido por Alexandre Alencar</p>
       </div>
     </footer>
 

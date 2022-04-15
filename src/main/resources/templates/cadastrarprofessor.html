@@ -17,23 +17,41 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-around"
-    >
-      <h1 class="navbar-brand">Gestão de Professores</h1>
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" th:href="@{/professor/}">Professores</a>
-        </li>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+          <a class="navbar-brand" href="/">Gestão de Professores</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                  aria-controls="navbarResponsive"
+                  aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
     <main>
       <div class="container mt-4">
         <div class="row">
           <div
             class="col-md-6 col-sm-6 container justify-content-center border"
           >
-            <h2>Cadastro de Aluno</h2>
+            <h2>Cadastro de Professor</h2>
             <form th:action="@{/professor/}" th:object="${professor}" method="post">
               <div class="form-row">
                 <div class="form-group">
@@ -85,7 +103,7 @@
         </div>
       </div>
     </main>
-    <footer class="bg-dark text-center text-lg-start">
+    <footer class="bg-white text-center text-lg-start">
       <div class="text-center p-3">
         <p>©Desenvolvido por Alexandre Alencar</p>
       </div>
